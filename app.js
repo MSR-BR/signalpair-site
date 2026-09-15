@@ -12,7 +12,7 @@
     });
     document.querySelectorAll("a[href]").forEach((link) => {
       const href = link.getAttribute("href");
-      if (!href || href.startsWith("#") || href.startsWith("http") || href.startsWith("mailto:")) return;
+      if (!href || href.startsWith("#") || href.startsWith("http") || href.startsWith("mailto:") || link.hasAttribute("download") || link.hasAttribute("data-preserve-href")) return;
       const [path, hash = ""] = href.split("#");
       const target = new URL(path, location.href);
       target.searchParams.set("lang", language);

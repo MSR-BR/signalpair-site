@@ -1,0 +1,259 @@
+{
+  "analysis_id": "V-005",
+  "question": "Between 2000 and 2024, how did worldwide country/territory distribution move jointly in Internet use and total fertility, and was within-year association generally negative?",
+  "source_release": "2026-07-13",
+  "primary": {
+    "endpoint": {
+      "start_year": 2000,
+      "end_year": 2024,
+      "paired_cohort_n": 175,
+      "internet_start_median": 2.207532992624,
+      "internet_end_median": 82.04689789,
+      "internet_median_change": 79.839364897376,
+      "fertility_start_median": 2.6,
+      "fertility_end_median": 1.85,
+      "fertility_median_change": -0.75,
+      "movement_counts": {
+        "right_down": 156,
+        "right_up": 19,
+        "left_down": 0,
+        "left_up": 0,
+        "tie_or_axis": 0
+      },
+      "right_down_share": 0.8914285714285715,
+      "h1_direction_supported": true,
+      "majority_right_down_supported": true
+    },
+    "association": {
+      "year_count": 25,
+      "median": -0.7858544164517299,
+      "q1": -0.7926402933618142,
+      "q3": -0.7602166130229596,
+      "minimum": -0.8021955822923784,
+      "maximum": -0.7197619855107596,
+      "negative_years": 25,
+      "positive_years": 0,
+      "zero_years": 0,
+      "decision_negative_median": true
+    }
+  },
+  "sensitivities": {
+    "S1_endpoint_2023": {
+      "endpoint": {
+        "start_year": 2000,
+        "end_year": 2023,
+        "paired_cohort_n": 175,
+        "internet_start_median": 2.2038729393788,
+        "internet_end_median": 81.33650208,
+        "internet_median_change": 79.1326291406212,
+        "fertility_start_median": 2.691,
+        "fertility_end_median": 1.913,
+        "fertility_median_change": -0.7779999999999998,
+        "movement_counts": {
+          "right_down": 152,
+          "right_up": 23,
+          "left_down": 0,
+          "left_up": 0,
+          "tie_or_axis": 0
+        },
+        "right_down_share": 0.8685714285714285,
+        "h1_direction_supported": true,
+        "majority_right_down_supported": true
+      },
+      "association": {
+        "year_count": 24,
+        "median": -0.7872736779624262,
+        "q1": -0.7928281884705897,
+        "q3": -0.7589684875740699,
+        "minimum": -0.8021955822923784,
+        "maximum": -0.7197619855107596,
+        "negative_years": 24,
+        "positive_years": 0,
+        "zero_years": 0,
+        "decision_negative_median": true
+      }
+    },
+    "S2_balanced_panel": {
+      "balanced_entity_n": 155,
+      "endpoint": {
+        "start_year": 2000,
+        "end_year": 2024,
+        "paired_cohort_n": 155,
+        "internet_start_median": 1.98225319605827,
+        "internet_end_median": 82.15989685,
+        "internet_median_change": 80.17764365394173,
+        "fertility_start_median": 2.691,
+        "fertility_end_median": 1.805,
+        "fertility_median_change": -0.8859999999999999,
+        "movement_counts": {
+          "right_down": 139,
+          "right_up": 16,
+          "left_down": 0,
+          "left_up": 0,
+          "tie_or_axis": 0
+        },
+        "right_down_share": 0.896774193548387,
+        "h1_direction_supported": true,
+        "majority_right_down_supported": true
+      },
+      "association": {
+        "year_count": 25,
+        "median": -0.7746394676849263,
+        "q1": -0.801677055672237,
+        "q3": -0.7522084894736503,
+        "minimum": -0.8147004087497242,
+        "maximum": -0.725800578140904,
+        "negative_years": 25,
+        "positive_years": 0,
+        "zero_years": 0,
+        "decision_negative_median": true
+      }
+    },
+    "S3_within_region": [
+      {
+        "region_id": "EAS",
+        "region_name": "East Asia & Pacific",
+        "eligible_years": 25,
+        "median_coefficient": -0.7497435897435897,
+        "minimum_coefficient": -0.8071794871794871,
+        "maximum_coefficient": -0.5225806451612904,
+        "negative_years": 25
+      },
+      {
+        "region_id": "ECS",
+        "region_name": "Europe & Central Asia",
+        "eligible_years": 25,
+        "median_coefficient": -0.039881044580354234,
+        "minimum_coefficient": -0.32149728686735934,
+        "maximum_coefficient": 0.07294207850706902,
+        "negative_years": 17
+      },
+      {
+        "region_id": "LCN",
+        "region_name": "Latin America & Caribbean",
+        "eligible_years": 25,
+        "median_coefficient": -0.6505452821242294,
+        "minimum_coefficient": -0.7969745800061087,
+        "maximum_coefficient": -0.4321847507331378,
+        "negative_years": 25
+      },
+      {
+        "region_id": "MEA",
+        "region_name": "Middle East, North Africa, Afghanistan & Pakistan",
+        "eligible_years": 25,
+        "median_coefficient": -0.6445790442410565,
+        "minimum_coefficient": -0.7628458498023717,
+        "maximum_coefficient": -0.45112781954887216,
+        "negative_years": 25
+      },
+      {
+        "region_id": "SSF",
+        "region_name": "Sub-Saharan Africa",
+        "eligible_years": 25,
+        "median_coefficient": -0.6421673606144318,
+        "minimum_coefficient": -0.8153561517113783,
+        "maximum_coefficient": -0.5174838112858464,
+        "negative_years": 25
+      }
+    ],
+    "S4_leave_one_region_out": {
+      "all_h1_direction_supported": true,
+      "all_movement_majority_supported": true,
+      "all_h2_negative_supported": true
+    },
+    "S5_un_193": {
+      "endpoint": {
+        "start_year": 2000,
+        "end_year": 2024,
+        "paired_cohort_n": 173,
+        "internet_start_median": 2.2038729393788,
+        "internet_end_median": 81.95705992,
+        "internet_median_change": 79.75318698062121,
+        "fertility_start_median": 2.691,
+        "fertility_end_median": 1.892,
+        "fertility_median_change": -0.7989999999999999,
+        "movement_counts": {
+          "right_down": 154,
+          "right_up": 19,
+          "left_down": 0,
+          "left_up": 0,
+          "tie_or_axis": 0
+        },
+        "right_down_share": 0.8901734104046243,
+        "h1_direction_supported": true,
+        "majority_right_down_supported": true
+      },
+      "association": {
+        "year_count": 25,
+        "median": -0.7951658001312446,
+        "q1": -0.8114229951314109,
+        "q3": -0.7690542025022531,
+        "minimum": -0.8214286534026497,
+        "maximum": -0.728406229620677,
+        "negative_years": 25,
+        "positive_years": 0,
+        "zero_years": 0,
+        "decision_negative_median": true
+      }
+    },
+    "S6_population_weighted": {
+      "median": -0.6910400947695156,
+      "q1": -0.7508972774804622,
+      "q3": -0.6647625877256071,
+      "minimum": -0.8288525465776334,
+      "maximum": -0.5974336524921974,
+      "negative_years": 25,
+      "positive_years": 0,
+      "decision_negative_median": true,
+      "minimum_kish_effective_n": 11.372359476060762,
+      "maximum_largest_entity_weight_share": 0.21483496487045714,
+      "minimum_population_coverage_of_complete_cases": 1.0
+    },
+    "S7_kendall_tau_b": {
+      "year_count": 25,
+      "median": -0.5855512824392641,
+      "q1": -0.5931636946974382,
+      "q3": -0.5603688159171317,
+      "minimum": -0.6013192330328246,
+      "maximum": -0.5290026338756258,
+      "negative_years": 25,
+      "positive_years": 0,
+      "zero_years": 0,
+      "decision_negative_median": true
+    },
+    "S8_leave_one_entity_out": {
+      "all_h1_direction_supported": true,
+      "all_movement_majority_supported": true,
+      "all_h2_negative_supported": true,
+      "maximum_absolute_change_from_primary_median_rho": 0.00795746180821666,
+      "most_influential_exclusion": "UKR"
+    },
+    "S9_reduced_time_grid": {
+      "years": [
+        2000,
+        2005,
+        2010,
+        2015,
+        2020,
+        2023,
+        2024
+      ],
+      "year_count": 7,
+      "median": -0.769333898029808,
+      "q1": -0.7906978465326315,
+      "q3": -0.757661885679831,
+      "minimum": -0.7956513297797194,
+      "maximum": -0.7197619855107596,
+      "negative_years": 7,
+      "positive_years": 0,
+      "zero_years": 0,
+      "decision_negative_median": true
+    },
+    "S10_source_revision": {
+      "status": "not_testable_with_single_source_revision",
+      "reason": "The frozen inputs contain one WDI release (2026-07-13); no previous release snapshot is available for a revision comparison."
+    }
+  },
+  "interpretation_boundary": "Country-year ecological associations; no causal or individual-level inference.",
+  "publication_status": "analysis_only_not_approved_for_publication"
+}
