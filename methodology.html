@@ -13,13 +13,13 @@
 <body data-language="en">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="preview-banner" data-local-preview hidden><span data-lang="en">Local review candidate — not published</span><span data-lang="pt">Candidato local para revisão — não publicado</span></div>
-  <header class="site-header">
+  <!-- GLOBAL HEADER CONTRACT: keep this header identical on every SignalPair page. -->
+  <header class="site-header" data-site-header>
     <a class="brand" href="index.html" aria-label="SignalPair home"><img src="assets/signalpair-wordmark.png" alt="SignalPair"></a>
-    <nav aria-label="Primary">
-      <a href="index.html"><span data-lang="en">Overview</span><span data-lang="pt">Visão geral</span></a>
-      <a href="#workflow"><span data-lang="en">Workflow</span><span data-lang="pt">Fluxo</span></a>
-      <a href="#sources"><span data-lang="en">Sources</span><span data-lang="pt">Fontes</span></a>
-      <a href="#corrections"><span data-lang="en">Corrections</span><span data-lang="pt">Correções</span></a>
+    <nav class="site-nav" data-global-nav aria-label="Primary">
+      <a href="index.html" data-nav="home"><span data-lang="en">Home</span><span data-lang="pt">Início</span></a>
+      <a href="index.html#episodes" data-nav="episodes"><span data-lang="en">Episodes</span><span data-lang="pt">Episódios</span></a>
+      <a href="methodology.html" data-nav="method"><span data-lang="en">Method</span><span data-lang="pt">Método</span></a>
     </nav>
     <div class="language-switch" role="group" aria-label="Language"><button type="button" data-set-language="en" aria-pressed="true">EN</button><button type="button" data-set-language="pt" aria-pressed="false">PT</button></div>
   </header>

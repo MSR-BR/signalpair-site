@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "change": "V-005-analysis-and-sensitivity",
+  "status": "PASS",
+  "primaryCommit": "416401c3ba16e27b3614774dbcd8772ca27a4030",
+  "validationType": "independent_decimal_recomputation_and_artifact_integrity",
+  "checkCount": 23,
+  "passedCount": 23,
+  "checks": [
+    {
+      "name": "frozen_panel_hash",
+      "passed": true,
+      "detail": "9b731512a9848138113cd2c395175fe8196fb41d7758cd8b88cf7e87e1175c00"
+    },
+    {
+      "name": "frozen_method_hash",
+      "passed": true,
+      "detail": "a0801177c4565d233b5ce9b7fa147b8dc643a5df08c3f4dcf359d488736f6c57"
+    },
+    {
+      "name": "four_frozen_scenarios",
+      "passed": true,
+      "detail": [
+        "Q0_three_state",
+        "Q1_midpoint_binary",
+        "Q2_boundary_autocracy",
+        "Q3_boundary_democracy"
+      ]
+    },
+    {
+      "name": "panel_row_count",
+      "passed": true,
+      "detail": 9056
+    },
+    {
+      "name": "year_grid_1973_2025",
+      "passed": true,
+      "detail": [
+        1973,
+        2025,
+        53
+      ]
+    },
+    {
+      "name": "annual_gap_row_count",
+      "passed": true,
+      "detail": 212
+    },
+    {
+      "name": "all_annual_gap_values_exact",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "composition_row_count",
+      "passed": true,
+      "detail": 477
+    },
+    {
+      "name": "composition_reconciles",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "h1_independent_verdict",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "h2_independent_verdict",
+      "passed": true,
+      "detail": {
+        "Q0_three_state": true,
+        "Q1_midpoint_binary": true,
+        "Q2_boundary_autocracy": true,
+        "Q3_boundary_democracy": true
+      }
+    },
+    {
+      "name": "cohoused_2024_gate",
+      "passed": true,
+      "detail": "-20.494006886426831717666532686678928837157558368147"
+    },
+    {
+      "name": "annual_sign_changes",
+      "passed": true,
+      "detail": [
+        [
+          1974,
+          1975
+        ],
+        [
+          1977,
+          1978
+        ],
+        [
+          2014,
+          2015
+        ]
+      ]
+    },
+    {
+      "name": "adjacent_year_stability",
+      "passed": true,
+      "detail": {
+        "early": false,
+        "late": true
+      }
+    },
+    {
+      "name": "leave_one_row_count",
+      "passed": true,
+      "detail": {
+        "reported": 1888,
+        "expected": 1888
+      }
+    },
+    {
+      "name": "leave_one_values_exact",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "leave_one_no_endpoint_sign_flip",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "q1_best_estimate_agreement",
+      "passed": true,
+      "detail": {
+        "comparable": 9055,
+        "mismatch": 0
+      }
+    },
+    {
+      "name": "eleven_sensitivities",
+      "passed": true,
+      "detail": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "name": "external_and_revision_not_testable",
+      "passed": true,
+      "detail": [
+        "not_testable",
+        "not_testable"
+      ]
+    },
+    {
+      "name": "lineage_output_hashes",
+      "passed": true,
+      "detail": {
+        "checked": 9,
+        "failures": []
+      }
+    },
+    {
+      "name": "expected_output_inventory",
+      "passed": true,
+      "detail": {
+        "expected": 9,
+        "missing": []
+      }
+    },
+    {
+      "name": "downstream_authority_blocked",
+      "passed": true,
+      "detail": "no storyboard, render or publication authority"
+    }
+  ],
+  "validatedInputs": [
+    {
+      "path": "videos/004-regime-population/clean/vdem_regime_population_unit_year.csv",
+      "sha256": "9b731512a9848138113cd2c395175fe8196fb41d7758cd8b88cf7e87e1175c00"
+    },
+    {
+      "path": "videos/004-regime-population/derived/v003-quality/quality_by_year.csv",
+      "sha256": "ebae9e8cdc1370387fd6bb612d3e886ea990a340d472216a31d5909d671cb7e6"
+    },
+    {
+      "path": "videos/004-regime-population/method/v004-statistical-contract.json",
+      "sha256": "a0801177c4565d233b5ce9b7fa147b8dc643a5df08c3f4dcf359d488736f6c57"
+    }
+  ],
+  "formalResult": "H1_and_H2_supported_with_material_early_adjacent_year_instability",
+  "causalClaimAuthorized": false,
+  "storyboardAuthorized": false,
+  "renderAuthorized": false,
+  "publicationAttempted": false,
+  "publicationAuthorized": false
+}

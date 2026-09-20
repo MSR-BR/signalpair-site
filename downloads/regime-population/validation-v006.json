@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "change": "V-006-answer-and-limitations",
+  "status": "PASS_WITH_MANDATORY_LIMITATIONS",
+  "checksPassed": 20,
+  "checksTotal": 20,
+  "checks": [
+    {
+      "name": "contract_identity",
+      "passed": true,
+      "detail": "V-006 machine contract and terminal status"
+    },
+    {
+      "name": "endpoint_1973_exact",
+      "passed": true,
+      "detail": "unit share, observed population share, gap and coverage"
+    },
+    {
+      "name": "endpoint_2024_exact",
+      "passed": true,
+      "detail": "unit share, observed population share, gap and coverage"
+    },
+    {
+      "name": "endpoint_2025_exact",
+      "passed": true,
+      "detail": "unit share, observed population share, gap and coverage"
+    },
+    {
+      "name": "all_sign_changes",
+      "passed": true,
+      "detail": "[(1974, 1975), (1977, 1978), (2014, 2015)]"
+    },
+    {
+      "name": "persistent_negative_from_2015",
+      "passed": true,
+      "detail": "2014 positive; every annual Q0 gap from 2015 through 2025 negative"
+    },
+    {
+      "name": "mandatory_limitations",
+      "passed": true,
+      "detail": "ten required limitations including non-monotonicity and post-exploratory status"
+    },
+    {
+      "name": "not_tested_preserved",
+      "passed": true,
+      "detail": "S10 external classification and S11 source revision"
+    },
+    {
+      "name": "silent_open_public_format",
+      "passed": true,
+      "detail": "no narration, no conclusion card, open question, missingness and full trajectory"
+    },
+    {
+      "name": "authority_boundary",
+      "passed": true,
+      "detail": "V-007 narrative design only; storyboard/render/upload/publication false"
+    },
+    {
+      "name": "claim_matrix_shape",
+      "passed": true,
+      "detail": "20 unique claims"
+    },
+    {
+      "name": "claim_matrix_statuses",
+      "passed": true,
+      "detail": "allowed, allowed_with_context, forbidden, not_tested, supported, supported_with_context"
+    },
+    {
+      "name": "forbidden_claim_coverage",
+      "passed": true,
+      "detail": "causal/blame, individual, monotonic, predictive and conclusion claims blocked"
+    },
+    {
+      "name": "conditional_claim_qualifiers",
+      "passed": true,
+      "detail": "every conditional claim has a required qualifier"
+    },
+    {
+      "name": "public_language_contract",
+      "passed": true,
+      "detail": "silent, open, non-linear and auditable public boundary"
+    },
+    {
+      "name": "methodology_page_contract",
+      "passed": true,
+      "detail": "future support page minimum content"
+    },
+    {
+      "name": "report_claim_boundary",
+      "passed": true,
+      "detail": "answer-first evidence plus non-linear and no-conclusion limitations"
+    },
+    {
+      "name": "project_state_v007",
+      "passed": true,
+      "detail": "V-006 complete; V-007 next"
+    },
+    {
+      "name": "catalog_entries",
+      "passed": true,
+      "detail": "six V-006 artifacts and V004 status"
+    },
+    {
+      "name": "no_youtube_publication",
+      "passed": true,
+      "detail": "YouTube publication catalog remains empty"
+    }
+  ],
+  "primaryArtifactCommit": "8f2e737b19948c0c635c2e3d67bcdfce6e051f33",
+  "nextChange": "V-007-narrative-arc-and-storyboard",
+  "nextModel": "gpt-5.6-sol",
+  "nextReasoning": "xhigh",
+  "storyboardAuthorized": false,
+  "renderAuthorized": false,
+  "uploadAuthorized": false,
+  "publicationAuthorized": false
+}

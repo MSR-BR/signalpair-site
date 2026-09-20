@@ -1,0 +1,180 @@
+{
+  "status": "PASS_WITH_MATERIAL_ADJACENT_YEAR_LIMITATION",
+  "primaryQuestionAnswered": true,
+  "h1": {
+    "verdict": "supported",
+    "passed": true,
+    "reason": "Q0 observed gap is strictly positive in 1973 and strictly negative in 2025."
+  },
+  "h2": {
+    "verdict": "supported",
+    "passed": true,
+    "scenarioResults": {
+      "Q0_three_state": {
+        "gapLower1973Pp": "11.170324467163375633952730269213737482409328408242",
+        "gapUpper2024Pp": "-19.574983080065696954819630952909226193438619112361",
+        "gapUpper2025Pp": "-18.192991840988564674509679382669563191226276543160",
+        "passed": true
+      },
+      "Q1_midpoint_binary": {
+        "gapLower1973Pp": "9.6944480042867707420827651790640772868740965265830",
+        "gapUpper2024Pp": "-23.231674820265556705021172519669482749470392590686",
+        "gapUpper2025Pp": "-20.852040663512826101602858163507110648669719653752",
+        "passed": true
+      },
+      "Q2_boundary_autocracy": {
+        "gapLower1973Pp": "11.170324467163375633952730269213737482409328408242",
+        "gapUpper2024Pp": "-19.574983080065696954819630952909226193438619112361",
+        "gapUpper2025Pp": "-18.192991840988564674509679382669563191226276543160",
+        "passed": true
+      },
+      "Q3_boundary_democracy": {
+        "gapLower1973Pp": "8.4677714458119685316185001002774225054614500657850",
+        "gapUpper2024Pp": "-19.400453266653338143784101263306007872386481696110",
+        "gapUpper2025Pp": "-19.616120273486466108241227159602482874005321054635",
+        "passed": true
+      }
+    },
+    "worstCaseRule": "all Q0-Q3 require lower(1973)>0 and upper(2024,2025)<0"
+  },
+  "publicEndpointGate2024": {
+    "verdict": "passed",
+    "passed": true,
+    "independentEndpointReproduction": {
+      "passed": true,
+      "values": {
+        "1973": "15.638011213149685090900236349794421691735893724166",
+        "2024": "-20.494006886426831717666532686678928837157558368147",
+        "2025": "-19.404304949382555618282684878898487033269378648132"
+      }
+    },
+    "note": "Scientific eligibility only; owner approval is still mandatory before any public use."
+  },
+  "primaryEndpoints": {
+    "1973": {
+      "year": 1973,
+      "classification_scenario": "Q0_three_state",
+      "country_democracy_n": 31,
+      "country_denominator_n": 158,
+      "country_democracy_share": "0.19620253164556962025316455696202531645569620253165",
+      "observed_democracy_population": "1204208474.0",
+      "observed_population_denominator": "3415393512.0",
+      "observed_democracy_share": "0.35258264377706647116216692045996953337305513977331",
+      "gap_observed_pp": "15.638011213149685090900236349794421691735893724166",
+      "gap_lower_pp": "11.170324467163375633952730269213737482409328408242",
+      "gap_upper_pp": "23.841642312324157453930817877485972611237030935479",
+      "gap_observed_sign": "positive",
+      "gap_lower_sign": "positive",
+      "gap_upper_sign": "positive",
+      "common_matched_democracy_n": 30,
+      "common_matched_unit_n": 129,
+      "common_matched_unit_share": "0.23255813953488372093023255813953488372093023255814",
+      "common_matched_gap_pp": "12.002450424218275023193436232043464965212490721517",
+      "world_population_reference": "3910964219",
+      "reference_missing_mass": "495570707.0",
+      "population_coverage_rate": "0.87328682154839218180021912391727764871172297472763",
+      "input_panel_sha256": "9b731512a9848138113cd2c395175fe8196fb41d7758cd8b88cf7e87e1175c00",
+      "method_contract_sha256": "a0801177c4565d233b5ce9b7fa147b8dc643a5df08c3f4dcf359d488736f6c57"
+    },
+    "2024": {
+      "year": 2024,
+      "classification_scenario": "Q0_three_state",
+      "country_democracy_n": 76,
+      "country_denominator_n": 179,
+      "country_democracy_share": "0.42458100558659217877094972067039106145251396648045",
+      "observed_democracy_population": "1767016322.0",
+      "observed_population_denominator": "8045022701.0",
+      "observed_democracy_share": "0.21964093672232386159428439380360177308093838279898",
+      "gap_observed_pp": "-20.494006886426831717666532686678928837157558368147",
+      "gap_lower_pp": "-20.752676592717471431652091628510829635953786613506",
+      "gap_upper_pp": "-19.574983080065696954819630952909226193438619112361",
+      "gap_observed_sign": "negative",
+      "gap_lower_sign": "negative",
+      "gap_upper_sign": "negative",
+      "common_matched_democracy_n": 74,
+      "common_matched_unit_n": 171,
+      "common_matched_unit_share": "0.43274853801169590643274853801169590643274853801170",
+      "common_matched_gap_pp": "-21.310760128937204483846414420809413335181015521272",
+      "world_population_reference": "8140897523",
+      "reference_missing_mass": "95874822.0",
+      "population_coverage_rate": "0.98822306487348225523167539324398396557484832498855",
+      "input_panel_sha256": "9b731512a9848138113cd2c395175fe8196fb41d7758cd8b88cf7e87e1175c00",
+      "method_contract_sha256": "a0801177c4565d233b5ce9b7fa147b8dc643a5df08c3f4dcf359d488736f6c57"
+    },
+    "2025": {
+      "year": 2025,
+      "classification_scenario": "Q0_three_state",
+      "country_democracy_n": 74,
+      "country_denominator_n": 179,
+      "country_democracy_share": "0.41340782122905027932960893854748603351955307262570",
+      "observed_democracy_population": "1774210427.0",
+      "observed_population_denominator": "8087945995.0",
+      "observed_democracy_share": "0.21936477173522472314678208975850116318685928614438",
+      "gap_observed_pp": "-19.404304949382555618282684878898487033269378648132",
+      "gap_lower_pp": "-19.744693666034998094566265127905466962515248632604",
+      "gap_upper_pp": "-18.192991840988564674509679382669563191226276543160",
+      "gap_observed_sign": "negative",
+      "gap_lower_sign": "negative",
+      "gap_upper_sign": "negative",
+      "common_matched_democracy_n": 73,
+      "common_matched_unit_n": 172,
+      "common_matched_unit_share": "0.42441860465116279069767441860465116279069767441860",
+      "common_matched_gap_pp": "-20.505383291593806755089232884614999960383838827422",
+      "world_population_reference": "8215424893",
+      "reference_missing_mass": "127478898.0",
+      "population_coverage_rate": "0.98448298174953566579943414254764096228711027910556",
+      "input_panel_sha256": "9b731512a9848138113cd2c395175fe8196fb41d7758cd8b88cf7e87e1175c00",
+      "method_contract_sha256": "a0801177c4565d233b5ce9b7fa147b8dc643a5df08c3f4dcf359d488736f6c57"
+    }
+  },
+  "annualSignChanges": [
+    {
+      "fromYear": 1974,
+      "toYear": 1975,
+      "fromGapObservedPp": "15.489694920508866965261106666714405449227245836369",
+      "toGapObservedPp": "-2.2561312475151775204530894069697504236278490373370"
+    },
+    {
+      "fromYear": 1977,
+      "toYear": 1978,
+      "fromGapObservedPp": "-4.3243095936709163655631274467923389616539277859100",
+      "toGapObservedPp": "12.860649473751900021625209483479937938221818477502"
+    },
+    {
+      "fromYear": 2014,
+      "toYear": 2015,
+      "fromGapObservedPp": "0.34625696495871404282885555740846889373391237509800",
+      "toGapObservedPp": "-16.940165572551881462618782437267485811712012895725"
+    }
+  ],
+  "adjacentYearStability": {
+    "early1973To1975": {
+      "values": {
+        "1973": "15.638011213149685090900236349794421691735893724166",
+        "1974": "15.489694920508866965261106666714405449227245836369",
+        "1975": "-2.2561312475151775204530894069697504236278490373370"
+      },
+      "passed": false
+    },
+    "late2023To2025": {
+      "values": {
+        "2023": "-20.763967618511000834186181249385476984451149794902",
+        "2024": "-20.494006886426831717666532686678928837157558368147",
+        "2025": "-19.404304949382555618282684878898487033269378648132"
+      },
+      "passed": true
+    },
+    "overallPassed": false,
+    "interpretation": "The late endpoint is stable. The early endpoint is not: the sign turns negative in 1975 and returns positive in 1978."
+  },
+  "q1BestEstimateAgreement": {
+    "comparableRows": 9055,
+    "agreementRows": 9055,
+    "mismatchRows": 0,
+    "unavailableRows": 0
+  },
+  "interpretationBoundary": "Descriptive ecological comparison; no causal, individual-level, ranking or predictive claim.",
+  "storyboardAuthorized": false,
+  "renderAuthorized": false,
+  "publicationAuthorized": false
+}

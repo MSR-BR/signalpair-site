@@ -16,14 +16,15 @@
     <span data-lang="en">Local review candidate — not published</span>
     <span data-lang="pt">Candidato local para revisão — não publicado</span>
   </div>
-  <header class="site-header">
+  <!-- GLOBAL HEADER CONTRACT: keep this header identical on every SignalPair page. -->
+  <header class="site-header" data-site-header>
     <a class="brand" href="index.html" aria-label="SignalPair home">
       <img src="assets/signalpair-wordmark.png" alt="SignalPair">
     </a>
-    <nav aria-label="Primary">
-      <a href="#read"><span data-lang="en">How to read</span><span data-lang="pt">Como ler</span></a>
-      <a href="methodology.html"><span data-lang="en">Method</span><span data-lang="pt">Método</span></a>
-      <a href="#episodes"><span data-lang="en">Episodes</span><span data-lang="pt">Episódios</span></a>
+    <nav class="site-nav" data-global-nav aria-label="Primary">
+      <a href="index.html" data-nav="home"><span data-lang="en">Home</span><span data-lang="pt">Início</span></a>
+      <a href="index.html#episodes" data-nav="episodes"><span data-lang="en">Episodes</span><span data-lang="pt">Episódios</span></a>
+      <a href="methodology.html" data-nav="method"><span data-lang="en">Method</span><span data-lang="pt">Método</span></a>
     </nav>
     <div class="language-switch" role="group" aria-label="Language">
       <button type="button" data-set-language="en" aria-pressed="true">EN</button>
@@ -134,14 +135,21 @@
         <div>
           <p class="kicker" data-lang="en">Episode library</p>
           <p class="kicker" data-lang="pt">Biblioteca de episódios</p>
-          <h2 data-lang="en">Nothing is published yet</h2>
-          <h2 data-lang="pt">Nada foi publicado ainda</h2>
+          <h2 data-lang="en">Episode reference pages</h2>
+          <h2 data-lang="pt">Páginas de referência dos episódios</h2>
         </div>
       </div>
-      <div class="empty-state">
-        <p data-lang="en">The earlier prototypes were learning material, not approved episodes. New pages will appear only after their data, video and publication package pass review.</p>
-        <p data-lang="pt">Os protótipos anteriores foram material de aprendizagem, não episódios aprovados. Novas páginas só aparecerão depois que dados, vídeo e pacote de publicação passarem por revisão.</p>
-        <a href="episode-template.html"><span data-lang="en">Preview the episode-page standard →</span><span data-lang="pt">Veja o padrão da página de episódio →</span></a>
+      <div class="episode-directory">
+        <a class="episode-card" href="internet-fertility.html">
+          <span>EPISODE 01</span>
+          <strong data-lang="en">Internet use × births per woman</strong><strong data-lang="pt">Uso da Internet × nascimentos por mulher</strong>
+          <small>2000–2024</small>
+        </a>
+        <a class="episode-card" href="regime-population.html">
+          <span>EPISODE 02</span>
+          <strong data-lang="en">Political regimes: count countries × count people</strong><strong data-lang="pt">Regimes políticos: contar países × contar pessoas</strong>
+          <small>1973–2025</small>
+        </a>
       </div>
     </section>
   </main>

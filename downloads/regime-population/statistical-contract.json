@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "change": "V-004-method-and-crossing",
+  "status": "FROZEN_BEFORE_V005_RESULTS",
+  "methodVersion": "v004-method-v1",
+  "inputSnapshot": "20260916T194441Z",
+  "actualResultsComputed": false,
+  "formalHypothesisVerdict": null,
+  "publicationAuthorized": false,
+  "storyboardAuthorized": false,
+  "renderAuthorized": false,
+  "period": {"start": 1973, "end": 2025, "cohousedEndpoint": 2024},
+  "input": {
+    "path": "videos/004-regime-population/clean/vdem_regime_population_unit_year.csv",
+    "sha256": "9b731512a9848138113cd2c395175fe8196fb41d7758cd8b88cf7e87e1175c00",
+    "grain": "direct V-Dem political-unit year",
+    "primaryKey": ["country_id", "year"],
+    "rowsExpected": 9056
+  },
+  "eligibility": {
+    "equalUnit": "regime_available=True and integer v2x_regime_amb in 0..9",
+    "populationObserved": "equalUnit eligible and population_available=True and population>0",
+    "missingRegime": "excluded from both compositions for that year and reported",
+    "missingPopulation": "retained in equal-unit composition, excluded from observed-population composition and bounded",
+    "imputation": "none"
+  },
+  "classificationScenarios": [
+    {"id": "Q0_three_state", "autocracy": [0,1,2,3], "boundary": [4,5], "democracy": [6,7,8,9], "primary": true},
+    {"id": "Q1_midpoint_binary", "autocracy": [0,1,2,3,4], "boundary": [], "democracy": [5,6,7,8,9], "primary": false},
+    {"id": "Q2_boundary_autocracy", "autocracy": [0,1,2,3,4,5], "boundary": [], "democracy": [6,7,8,9], "primary": false},
+    {"id": "Q3_boundary_democracy", "autocracy": [0,1,2,3], "boundary": [], "democracy": [4,5,6,7,8,9], "primary": false}
+  ],
+  "estimands": {
+    "unitShare": "state unit count / eligible regime unit count",
+    "observedPopulationShare": "state observed population / observed eligible population",
+    "primaryGapPp": "100 * (observed democracy share - equal-unit democracy share)",
+    "authority": "unrounded numerators and denominators"
+  },
+  "missingPopulationBounds": {
+    "reference": "WDI SP.POP.TOTL WLD",
+    "missingReferenceMass": "world reference - observed eligible population",
+    "stopIfMissingReferenceMassNegative": true,
+    "lowerDemocracyShare": "observed democracy population / world reference",
+    "upperDemocracyShare": "(observed democracy population + missing reference mass) / world reference",
+    "interpretation": "conservative WDI-reference bounds, not exact territorial reconciliation"
+  },
+  "h1": {
+    "scenario": "Q0_three_state",
+    "supportRule": "gapObservedPp(1973)>0 AND gapObservedPp(2025)<0",
+    "zeroCountsAsReversal": false,
+    "minimumMagnitudeThreshold": null
+  },
+  "h2": {
+    "scenarios": ["Q0_three_state","Q1_midpoint_binary","Q2_boundary_autocracy","Q3_boundary_democracy"],
+    "years": [1973, 2024, 2025],
+    "supportRule": "for every scenario: gapLowerPp(1973)>0 AND gapUpperPp(2024)<0 AND gapUpperPp(2025)<0",
+    "failRule": "any mandatory defensible scenario reverses or touches zero at a required endpoint"
+  },
+  "publicEndpointGate": {
+    "rule": "H1 supported AND gapObservedPp_Q0(2024)<0 AND independent reproduction passes",
+    "reason": "2025 population is a separately audited WDI extension"
+  },
+  "arithmetic": {
+    "populationSummation": "decimal from source strings",
+    "minimumDecimalPrecision": 34,
+    "decisionRounding": "none",
+    "presentationRounding": "deferred"
+  },
+  "diagnostics": [
+    "full universe versus common matched universe",
+    "adjacent-year stability 1973-1975 and 2023-2025",
+    "leave-one-unit-out at 1973 2024 2025",
+    "v2x_regime agreement with Q1",
+    "external classifications if separately contracted",
+    "source revision if another official snapshot exists"
+  ],
+  "claimBoundary": {
+    "descriptive": true,
+    "ecological": true,
+    "causal": false,
+    "individualLevel": false,
+    "ranking": false,
+    "prediction": false
+  },
+  "nextChange": "V-005-analysis-and-sensitivity"
+}
