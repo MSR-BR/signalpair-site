@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "change": "V-006-answer-and-limitations",
+  "status": "PASS_WITH_MANDATORY_LIMITATIONS",
+  "checksPassed": 23,
+  "checksTotal": 23,
+  "checks": [
+    {
+      "name": "contract_identity",
+      "passed": true,
+      "detail": "machine contract identity and terminal status"
+    },
+    {
+      "name": "primary_counts_exact",
+      "passed": true,
+      "detail": "161 comparable; conditional 133; R28 F81 U24 O28"
+    },
+    {
+      "name": "primary_shares_exact",
+      "passed": true,
+      "detail": "exact conditional shares and gap"
+    },
+    {
+      "name": "hypotheses_exact",
+      "passed": true,
+      "detail": "H1 and H2 supported; 13 scenarios"
+    },
+    {
+      "name": "all_sensitivities_supported",
+      "passed": true,
+      "detail": "13 of 13 frozen scenarios supported"
+    },
+    {
+      "name": "endpoint_map_exact",
+      "passed": true,
+      "detail": "R/F/A/missing/mapped/off-map counts"
+    },
+    {
+      "name": "temporal_trajectory_exact",
+      "passed": true,
+      "detail": "F exceeds R at every midpoint 2005-2023"
+    },
+    {
+      "name": "overlap_and_turnover_boundary",
+      "passed": true,
+      "detail": "largest turnover is movement evidence, not a shock or authorized climax"
+    },
+    {
+      "name": "regional_heterogeneity_exact",
+      "passed": true,
+      "detail": "MENA/AP tie and North America all-U block universal regional claim"
+    },
+    {
+      "name": "mandatory_limitations",
+      "passed": true,
+      "detail": "12 limitations cover design, denominators, registration, censoring, time, geometry and untested work"
+    },
+    {
+      "name": "silent_open_public_format",
+      "passed": true,
+      "detail": "silent, map-led, open and auditable public format"
+    },
+    {
+      "name": "public_labels_exact",
+      "passed": true,
+      "detail": "four fixed public labels"
+    },
+    {
+      "name": "claim_matrix_shape",
+      "passed": true,
+      "detail": "24 unique claims"
+    },
+    {
+      "name": "claim_matrix_statuses",
+      "passed": true,
+      "detail": "allowed, allowed_with_context, forbidden, not_tested, supported, supported_with_context"
+    },
+    {
+      "name": "claim_qualifiers_complete",
+      "passed": true,
+      "detail": "all context-dependent claims have qualifiers"
+    },
+    {
+      "name": "forbidden_claim_coverage",
+      "passed": true,
+      "detail": "causal, individual, shock, prediction, universal-region and blame claims blocked"
+    },
+    {
+      "name": "public_language_contract",
+      "passed": true,
+      "detail": "silent, open, non-causal public copy"
+    },
+    {
+      "name": "methodology_page_contract",
+      "passed": true,
+      "detail": "future support-page content is complete but undeployed"
+    },
+    {
+      "name": "answer_first_report",
+      "passed": true,
+      "detail": "answer, exact counts, robustness and public restraint"
+    },
+    {
+      "name": "authority_boundary",
+      "passed": true,
+      "detail": "V-007 design only; production and external actions closed"
+    },
+    {
+      "name": "project_state_v007",
+      "passed": true,
+      "detail": "V-006 complete and V-007 next"
+    },
+    {
+      "name": "catalog_entries",
+      "passed": true,
+      "detail": "six V-006 artifacts and current video status"
+    },
+    {
+      "name": "no_youtube_publication",
+      "passed": true,
+      "detail": "YouTube publication catalog remains empty"
+    }
+  ],
+  "nextChange": "V-007-narrative-arc-and-storyboard",
+  "nextModel": "gpt-5.6-sol",
+  "nextReasoning": "high",
+  "storyboardAuthorized": false,
+  "renderAuthorized": false,
+  "siteDeployAuthorized": false,
+  "uploadAuthorized": false,
+  "publicationAuthorized": false
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "change": "V-006-answer-and-limitations",
+  "status": "PASS_WITH_MANDATORY_LIMITATIONS",
+  "question": "Among comparable national estimates, when adult obesity rose robustly versus 2001, how often did undernourishment robustly fall, rise or remain indeterminate, and how did this geography evolve through 2023?",
+  "scientificAnswer": "No. Undernourishment did not always fall. Among 133 comparable countries and areas with a robust adult-obesity rise from 2001 to 2023, it fell robustly in 81, rose robustly in 28 and was indeterminate in 24.",
+  "registrationDegree": "POST_HOC_DATA_INFORMED_WITH_PROSPECTIVE_SOURCE_QUALITY_METHOD_AND_SENSITIVITY_FREEZE",
+  "period": {
+    "baseline": 2001,
+    "comparison": 2023,
+    "pouBaselineWindow": "2000-2002",
+    "pouComparisonWindow": "2022-2024"
+  },
+  "primaryScenario": {
+    "id": "P0_2001_2023",
+    "pairComparableN": 161,
+    "conditionalN": 133,
+    "R": 28,
+    "F": 81,
+    "U": 24,
+    "O": 28,
+    "pR": "0.21052631578947368421052631578947368421052631578947",
+    "pF": "0.60902255639097744360902255639097744360902255639098",
+    "pU": "0.18045112781954887218045112781954887218045112781955",
+    "gapFMinusRPp": "39.849624060150375939849624060150375939849624060151"
+  },
+  "hypotheses": {
+    "H1": {"verdict": "SUPPORTED", "rule": "p_F > p_R > 0"},
+    "H2": {"verdict": "SUPPORTED", "scenarioCount": 13, "independentReproduction": true}
+  },
+  "endpointMap": {
+    "comparableN": 161,
+    "publicR": 28,
+    "publicF": 81,
+    "publicA": 52,
+    "missingN": 56,
+    "mappedComparableN": 149,
+    "offMapComparableN": 12
+  },
+  "populationContext": {
+    "role": "descriptive_ecological_only",
+    "observedPopulation": 7707746101,
+    "RShare": "0.11808429118882311248046648650239445659705961816814",
+    "FShare": "0.71435946356427601272902904615280087571218765551810",
+    "AShare": "0.16755624524690087479050446734480466769075272631376",
+    "hypothesisGate": false
+  },
+  "temporalTrajectory": {
+    "FExceedsRAtEveryMidpointFrom": 2005,
+    "through": 2023,
+    "earlyConditionalDenominatorWarning": true,
+    "pouCenteredThreeYear": true,
+    "adjacentWindowsOverlapTwoYears": true,
+    "independentAnnualShockClaimAuthorized": false,
+    "largestPublicStateTurnover": {"from": 2007, "to": 2008, "n": 22, "climaxAuthorized": false}
+  },
+  "regionalBoundary": {
+    "universalRegionalClaimAuthorized": false,
+    "menaAfghanistanPakistan": {"conditionalN": 14, "R": 7, "F": 7, "U": 0},
+    "northAmerica": {"conditionalN": 2, "R": 0, "F": 0, "U": 2}
+  },
+  "publicCommunication": {
+    "language": "English",
+    "narration": false,
+    "substantiveConclusionCard": false,
+    "openQuestionEnding": true,
+    "hook": "OBESITY ROSE. DID HUNGER ALWAYS FALL?",
+    "hungerShorthandRequiresDefinition": true,
+    "exactConstruct": "prevalence of undernourishment",
+    "fullAnnualTrajectoryRequired": true,
+    "yearMustRemainLargeAndVisible": true,
+    "missingDataDisclosureRequired": true,
+    "offMapDisclosureRequired": true,
+    "pouWindowDisclosureRequired": true,
+    "methodologyLinkQrRequired": true,
+    "sourceCreditRequired": ["WHO GHO", "FAO via World Development Indicators"],
+    "publicLabels": {
+      "R": "BOTH ROSE",
+      "F": "OBESITY UP / UNDERNOURISHMENT DOWN",
+      "A": "OTHER / UNCERTAIN",
+      "M": "NO COMPARABLE DATA"
+    },
+    "endpointCallouts": [
+      "2023 — 28 BOTH ROSE",
+      "2023 — 81 OBESITY UP / UNDERNOURISHMENT DOWN",
+      "52 OTHER / UNCERTAIN",
+      "12 COMPARABLE PLACES ARE OFF-MAP"
+    ],
+    "closingPrompts": [
+      "SAME WORLD. DIFFERENT PATHS. WHAT DO YOU SEE?",
+      "WHAT SHOULD WE COMPARE NEXT?"
+    ]
+  },
+  "requiredLimitations": [
+    "observational descriptive ecological analysis; no causal identification",
+    "adult obesity and population undernourishment have different human denominators; no same-person inference",
+    "post-hoc data-informed question with prospective source quality method and sensitivity freeze",
+    "conditional result covers 133 comparable countries and areas with robust obesity rise, not all countries",
+    "interval uncertainty determines rise fall and indeterminate states",
+    "FAO PoU value 2.5 may be censored and is represented as [0,2.5]",
+    "centered three-year PoU windows overlap by two years; no independent annual shock claim",
+    "early post-baseline conditional denominators are small",
+    "regional results are heterogeneous and some denominators are small",
+    "12 comparable entities are off-map but remain in totals",
+    "population weighting is descriptive ecological context and not an H1 or H2 gate",
+    "external-source replication causal mechanisms prediction and future source revisions were not tested"
+  ],
+  "allowedPublicObservationIds": ["C05", "C06", "C07", "C08", "C09", "C10", "C11", "C12", "C13", "C14"],
+  "forbiddenClaimIds": ["C15", "C16", "C17", "C18", "C19", "C20", "C21", "C22", "C23"],
+  "narrativeCandidateBoundary": {
+    "selectionDeferredTo": "V-007-narrative-arc-and-storyboard",
+    "endpointPatternCandidateAllowed": true,
+    "gradualEmergence2005To2011CandidateAllowed": true,
+    "turnover2007To2008CandidateAllowedOnlyAsMovement": true,
+    "turnover2007To2008ShockFramingAllowed": false,
+    "regionalHeterogeneityAllowedOnlyWithDenominators": true,
+    "tinyEarlyDenominatorClimaxAllowed": false,
+    "intermediateClimaxSelected": false
+  },
+  "authority": {
+    "narrativeDesignAuthorized": true,
+    "storyboardAuthorized": false,
+    "renderAuthorized": false,
+    "methodologyPageBuildAuthorized": false,
+    "siteDeployAuthorized": false,
+    "uploadAuthorized": false,
+    "publicationAuthorized": false
+  },
+  "nextChange": "V-007-narrative-arc-and-storyboard",
+  "nextModel": "gpt-5.6-sol",
+  "nextReasoning": "high"
+}

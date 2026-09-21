@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "change": "V-005-analysis-and-sensitivity",
+  "createdAtUtc": "2026-09-20T18:51:35+00:00",
+  "validator": "videos/005-obesity-undernourishment/analytics/validate_v005_analysis.py",
+  "validatorIndependence": {
+    "importsPrimaryImplementation": false,
+    "readsFrozenPanelDirectly": true,
+    "recomputesAllPairStates": true,
+    "recomputesAllRegisteredSensitivities": true
+  },
+  "status": "PASS",
+  "independentReproduction": "PASS",
+  "checkCount": 28,
+  "passedCount": 28,
+  "failedCount": 0,
+  "formalResult": {
+    "H1": "SUPPORTED",
+    "H2": "SUPPORTED",
+    "publicInterpretationAuthorized": false,
+    "publicationAuthorized": false
+  },
+  "inputHashes": {
+    "panelSha256": "01f808160e9cfd251000ee807847a642051d4dec6568bf95ec522eb24693c1f8",
+    "methodContractSha256": "fc0d4b571203eeaa11c04db7b3942df8e742b57bd630ef4b733c90cb52ff03d1"
+  },
+  "checks": [
+    {
+      "checkId": "frozen_panel_hash",
+      "status": "PASS",
+      "detail": "01f808160e9cfd251000ee807847a642051d4dec6568bf95ec522eb24693c1f8"
+    },
+    {
+      "checkId": "frozen_contract_hash",
+      "status": "PASS",
+      "detail": "fc0d4b571203eeaa11c04db7b3942df8e742b57bd630ef4b733c90cb52ff03d1"
+    },
+    {
+      "checkId": "panel_shape",
+      "status": "PASS",
+      "detail": "rows=4991 entities=217 years=2001-2023"
+    },
+    {
+      "checkId": "panel_unique_key",
+      "status": "PASS",
+      "detail": "keys=4991 rows=4991"
+    },
+    {
+      "checkId": "classification_shape",
+      "status": "PASS",
+      "detail": "rows=4991"
+    },
+    {
+      "checkId": "classification_independent_reproduction",
+      "status": "PASS",
+      "detail": "all 4,991 rows reproduced"
+    },
+    {
+      "checkId": "classification_hash_lineage",
+      "status": "PASS",
+      "detail": "all rows point to frozen inputs"
+    },
+    {
+      "checkId": "annual_composition_independent_reproduction",
+      "status": "PASS",
+      "detail": "23 annual rows reproduced"
+    },
+    {
+      "checkId": "primary_endpoint_exact_counts",
+      "status": "PASS",
+      "detail": "{\"A\": 52, \"F\": 81, \"O\": 28, \"R\": 28, \"U\": 24, \"conditional\": 133, \"gap\": \"39.849624060150375939849624060150375939849624060151\", \"p_F\": \"0.60902255639097744360902255639097744360902255639098\", \"p_R\": \"0.21052631578947368421052631578947368421052631578947\", \"p_U\": \"0.18045112781954887218045112781954887218045112781955\", \"pair\": 161, \"verdict\": \"SUPPORTED\"}"
+    },
+    {
+      "checkId": "h1_independent_decision",
+      "status": "PASS",
+      "detail": "independent rule returns p_F > p_R > 0"
+    },
+    {
+      "checkId": "sensitivity_registry_exact",
+      "status": "PASS",
+      "detail": "materialized=13 expected=13"
+    },
+    {
+      "checkId": "sensitivity_independent_reproduction",
+      "status": "PASS",
+      "detail": "all 13 scenarios reproduced"
+    },
+    {
+      "checkId": "h2_independent_decision",
+      "status": "PASS",
+      "detail": "all registered scenarios preserve p_F > p_R > 0"
+    },
+    {
+      "checkId": "censor_exclusion_accounting",
+      "status": "PASS",
+      "detail": "{\"A\": 8, \"F\": 63, \"O\": 7, \"R\": 28, \"U\": 1, \"conditional\": 92, \"gap\": \"38.043478260869565217391304347826086956521739130435\", \"p_F\": \"0.68478260869565217391304347826086956521739130434783\", \"p_R\": \"0.30434782608695652173913043478260869565217391304348\", \"p_U\": \"0.010869565217391304347826086956521739130434782608696\", \"pair\": 99, \"verdict\": \"SUPPORTED\"}"
+    },
+    {
+      "checkId": "leave_one_region_out_complete",
+      "status": "PASS",
+      "detail": "regions=7"
+    },
+    {
+      "checkId": "transition_diagnostics_independent_reproduction",
+      "status": "PASS",
+      "detail": "22 transitions reproduced"
+    },
+    {
+      "checkId": "region_summary_independent_reproduction",
+      "status": "PASS",
+      "detail": "7 groups reproduced"
+    },
+    {
+      "checkId": "income_summary_independent_reproduction",
+      "status": "PASS",
+      "detail": "4 groups reproduced"
+    },
+    {
+      "checkId": "diagnostic_scenarios_independent_reproduction",
+      "status": "PASS",
+      "detail": "four diagnostics reproduced"
+    },
+    {
+      "checkId": "decision_file_matches_h1",
+      "status": "PASS",
+      "detail": "SUPPORTED"
+    },
+    {
+      "checkId": "decision_file_matches_h2_numeric",
+      "status": "PASS",
+      "detail": "SUPPORTED"
+    },
+    {
+      "checkId": "publication_guard",
+      "status": "PASS",
+      "detail": "storyboard, render, site, upload, and publication remain unauthorized"
+    },
+    {
+      "checkId": "temporal_overlap_disclosed",
+      "status": "PASS",
+      "detail": "overlap and non-independence are explicit"
+    },
+    {
+      "checkId": "population_context_not_in_hypotheses",
+      "status": "PASS",
+      "detail": "population is descriptive context only"
+    },
+    {
+      "checkId": "noncausal_scope_preserved",
+      "status": "PASS",
+      "detail": "no causal or same-people claim"
+    },
+    {
+      "checkId": "analysis_output_hashes",
+      "status": "PASS",
+      "detail": "all nine outputs match"
+    },
+    {
+      "checkId": "analysis_input_hashes",
+      "status": "PASS",
+      "detail": "run manifest points to frozen panel and method"
+    },
+    {
+      "checkId": "no_unregistered_factorial_expansion",
+      "status": "PASS",
+      "detail": "only the 13 frozen scenarios were executed"
+    }
+  ]
+}
