@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "change": "C-009/L08-scientific-and-visual-QA",
+  "sourceLastUpdated": "2026-07-13",
+  "source": "World Bank WDI SP.DYN.IMRT.IN; upstream producer UN IGME",
+  "period": [
+    1990,
+    2024
+  ],
+  "rows": 245,
+  "duplicateRegionYears": 0,
+  "nullMetricValues": 0,
+  "completeAnnualCoverage": true,
+  "cleanValuesMatchFrozenRawSource": true,
+  "regions": {
+    "SSF": {
+      "years": 35,
+      "firstYear": 1990,
+      "lastYear": 2024,
+      "start": 102.1,
+      "end": 47.1,
+      "absoluteDropPer1000": 55.0,
+      "averageAnnualAbsoluteDropPer1000": 1.6176,
+      "relativeDropPct": 53.9
+    },
+    "SAS": {
+      "years": 35,
+      "firstYear": 1990,
+      "lastYear": 2024,
+      "start": 85.5,
+      "end": 23.2,
+      "absoluteDropPer1000": 62.3,
+      "averageAnnualAbsoluteDropPer1000": 1.8324,
+      "relativeDropPct": 72.9
+    },
+    "MEA": {
+      "years": 35,
+      "firstYear": 1990,
+      "lastYear": 2024,
+      "start": 79.1,
+      "end": 32.0,
+      "absoluteDropPer1000": 47.1,
+      "averageAnnualAbsoluteDropPer1000": 1.3853,
+      "relativeDropPct": 59.5
+    },
+    "EAS": {
+      "years": 35,
+      "firstYear": 1990,
+      "lastYear": 2024,
+      "start": 44.5,
+      "end": 10.7,
+      "absoluteDropPer1000": 33.8,
+      "averageAnnualAbsoluteDropPer1000": 0.9941,
+      "relativeDropPct": 76.0
+    },
+    "LCN": {
+      "years": 35,
+      "firstYear": 1990,
+      "lastYear": 2024,
+      "start": 44.1,
+      "end": 13.3,
+      "absoluteDropPer1000": 30.8,
+      "averageAnnualAbsoluteDropPer1000": 0.9059,
+      "relativeDropPct": 69.8
+    },
+    "ECS": {
+      "years": 35,
+      "firstYear": 1990,
+      "lastYear": 2024,
+      "start": 25.6,
+      "end": 6.6,
+      "absoluteDropPer1000": 19.0,
+      "averageAnnualAbsoluteDropPer1000": 0.5588,
+      "relativeDropPct": 74.2
+    },
+    "NAC": {
+      "years": 35,
+      "firstYear": 1990,
+      "lastYear": 2024,
+      "start": 9.2,
+      "end": 5.4,
+      "absoluteDropPer1000": 3.8,
+      "averageAnnualAbsoluteDropPer1000": 0.1118,
+      "relativeDropPct": 41.3
+    }
+  },
+  "rankings": {
+    "absoluteDrop": [
+      "SAS",
+      "SSF",
+      "MEA",
+      "EAS",
+      "LCN",
+      "ECS",
+      "NAC"
+    ],
+    "relativeDrop": [
+      "EAS",
+      "ECS",
+      "SAS",
+      "LCN",
+      "MEA",
+      "SSF",
+      "NAC"
+    ]
+  },
+  "claimAudit": {
+    "previousHook": {
+      "text": "Where did infant mortality fall fastest?",
+      "status": "AMBIGUOUS",
+      "reason": "The largest absolute decline is South Asia, while the largest percentage decline is East Asia & Pacific."
+    },
+    "revisedHook": {
+      "text": "Which region saw the biggest drop?",
+      "status": "PASS",
+      "operationalDefinition": "1990 value minus 2024 value, in deaths before age 1 per 1,000 live births.",
+      "supportedAnswer": "South Asia",
+      "supportedValue": 62.3
+    },
+    "causalClaim": false,
+    "forcedConclusion": false
+  },
+  "visualAudit": {
+    "chart": "fixed horizontal bars",
+    "barBaseline": 0,
+    "commonScale": [
+      0,
+      110
+    ],
+    "maximumObservedValue": 102.9,
+    "fixedRegionOrder": [
+      "SSF",
+      "SAS",
+      "MEA",
+      "EAS",
+      "LCN",
+      "ECS",
+      "NAC"
+    ],
+    "regionIdentityUsesTextAndColor": true,
+    "annualValues": true,
+    "betweenYearMotion": "linear visual interpolation only; methodology must not describe fractional-year frames as separate observations"
+  },
+  "files": {
+    "raw/v000/worldbank-SP.DYN.IMRT.IN-1960-2024.json": "3796c48e4d8702945ef6dd084672d34928b006e49a1449803ffed69a9da4b17b",
+    "clean/v004-world-bank-regions.csv": "1e63f10d197120c66b4e4f1e0b3ae854b13453c625eaca14d943223ed85c72b6"
+  },
+  "publicationAuthority": false
+}
